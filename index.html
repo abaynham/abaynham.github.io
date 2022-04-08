@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iNM</title>
+
+  <!--
+    Tailwind is a CSS framework similar to Bootstrap.
+    It differs from Bootstrap in that it doesn't provide pre-made components, only classes.
+    You then use the classes to make your own components.
+
+    Usually, you work with it by using Nodejs and npm.
+    Because I want this site to be entirely static (and therefore portable, so I can just upload it to Moodle),
+    I'm using their simple CDN method. It's less customizable but it works well for this project.
+  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <!-- Create the navbar -->
+  <div class="bg-white-100 flex items-center justify-center gap-12 h-16 shadow-md">
+    <!-- Nav items -->
+    <a href="./index.html"><div class="hover:bg-red-200 rounded-full p-4 font-bold">Shop</div></a>
+    <a href="./support.html"><div class="hover:bg-red-200 rounded-full p-4">Support</div></a>
+    <a href="./about.html"><div class="hover:bg-red-200 rounded-full p-4">About</div></a>
+
+    <a href="./cart.html">
+        <svg height="32" width="32">
+          <image xlink:href="./img/cart.svg" width="32" height="32"></image>
+        </svg>
+    </a>
+  </div>
+
+  <!--
+    container is a tailwind class that basically just sets the width to a max value. 
+    mx-auto means: set the horizontal margin automatically, basically centering all the content inside.
+
+    px-24 adds a 24 unit padding on either side, effectively shrinking the container a bit.
+    (Tailwind has its own unit system, its equivalent to a certain number of ordinary CSS "rem" units)
+  -->
+  <div class="container mx-auto px-24 mt-4">
+
+    <img src="./img/scuffed_logo.png" alt="" class="mx-auto w-64 h-64 mt-2">
+
+    <!-- Actual content section !-->
+    <section class="mt-12">
+
+      <!-- Product grid, the number of columns will adjust based on screen size -->
+      <div id="product-grid" class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-14">
+        <!-- Products will be placed in here dynamically by JS -->
+      </div>
+
+    </section>
+  </div>
+
+  <footer class="pt-12 h-64">
+    <div class="text-center p-4 bg-orange-100 h-full">
+      © 2021 Copyright: iNM
+      <div class="flex items-center justify-center gap-12 pt-12">
+        <!-- Nav items -->
+        <a href="./index.html"><div class="hover:bg-red-200 rounded-full p-4">Shop</div></a>
+        <a href="./support.html"><div class="hover:bg-red-200 rounded-full p-4">Support</div></a>
+        <a href="./about.html"><div class="hover:bg-red-200 rounded-full p-4">About</div></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

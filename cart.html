@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNM</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="js/cart.js"></script>
+</head>
+<body>
+    <div class="bg-white-100 flex items-center justify-center gap-12 h-16 shadow-md">
+        <!-- Nav items -->
+        <a href="./index.html"><div class="hover:bg-red-200 rounded-full p-4 font-bold">Shop</div></a>
+        <a href="./support.html"><div class="hover:bg-red-200 rounded-full p-4">Support</div></a>
+        <a href="./about.html"><div class="hover:bg-red-200 rounded-full p-4">About</div></a>
+    
+        <a href="./cart.html">
+            <svg height="32" width="32">
+              <image xlink:href="./img/cart.svg" width="32" height="32"></image>
+            </svg>
+        </a>
+    </div>
+
+    <h1 class="text-6xl text-red-400 text-center pt-8">
+        Cart
+    </h1>
+
+    <section class="container mx-auto pt-12">
+        <div id="items-grid" class="grid grid-cols-3 gap-6 grid-wrap-cols">
+
+            <div id="product-list" class="col-span-2 flex flex-col gap-6">
+                <!-- Items will be added here by js/cart.js -->
+            </div>
+
+            <div class="col-span-1 bg-gray-100 shadow-md">
+                <div class="pl-6 pt-6">
+                    <p class="font-bold">Subtotal:</p>
+                    <p id="subtotal" class="pb-2"><!-- Filled in by JS --></p>
+
+                    <p class="font-bold">Standard Delivery:</p>
+                    <p id="delivery" class="pb-2"><!-- Filled in by JS --></p>
+
+                    <p class="font-bold">Total:</p>
+                    <p id="total"><!-- Filled in by JS --></p>
+                </div>
+
+                <button type="reset" class="mt-4 mb-6 px-12 flex mx-auto bg-red-400 h-12 rounded-xl" onclick="clearCart()">
+                    <p class="mx-auto my-auto font-bold text-white">
+                        Clear cart
+                    </p>
+                </button>
+
+                <button id="checkout-button" type="reset" class="mt-4 mb-6 px-12 flex mx-auto bg-red-600 h-12 rounded-xl">
+                    <p class="mx-auto my-auto font-bold text-white">
+                        Checkout
+                    </p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-12 h-64">
+        <div class="text-center p-4 bg-orange-100 h-full">
+          © 2021 Copyright: iNM
+          <div class="flex items-center justify-center gap-12 pt-12">
+            <!-- Nav items -->
+            <a href="./index.html"><div class="hover:bg-red-200 rounded-full p-4">Shop</div></a>
+            <a href="./support.html"><div class="hover:bg-red-200 rounded-full p-4">Support</div></a>
+            <a href="./about.html"><div class="hover:bg-red-200 rounded-full p-4">About</div></a>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>

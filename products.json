@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "id": 0,
+            "name": "Oversized-fit Hoodie",
+            "price": 29.99,
+            "old_price": 34.99,
+
+            "og": "https://www.grailed.com/listings/27898289-fruit-of-the-loom-x-streetwear-x-vintage-vintage-90s-red-fruit-of-the-loom-blank-hoodie-sweatshirt",
+            "img": "./img/hoodie.png"
+        },
+        {
+            "id": 1,
+            "name": "Blue Logo-Tee",
+            "price": 12.99,
+            "old_price": 0,
+            
+            "og": "https://media.istockphoto.com/photos/blank-white-tshirt-front-with-clipping-path-picture-id482948743?k=20&m=482948743&s=612x612&w=0&h=11DSbRFCtpwGzged_UxizZp_mdgFaPxxydeWrcDj7No=",
+            "img": "./img/tee.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Black and Purple Jumper",
+            "price": 17.99,
+            "old_price": 0,
+
+            "og": "https://www.alibaba.com/product-detail/blank-crewneck-mens-blank-sweatshirt_60726798222.html",
+            "img": "./img/jumper.jpg"
+        }
+    ]
+}
